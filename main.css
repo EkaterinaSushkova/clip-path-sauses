@@ -1,0 +1,122 @@
+body {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+h1 {
+    font: 700 36px 'Oswald', sans-serif;
+    text-align: center;
+    color: #000;
+}
+
+.header-span {
+    display: block;
+    font-weight: 100;
+}
+hr {
+    max-width: 5em;
+    margin-bottom: 30px;
+}
+.all-the-sauses {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.clip-path-container {
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    padding: 3px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgb(36, 35, 34);
+    border-collapse: separate;
+}
+.clip-path-container:focus,
+.clip-path-container:active,
+.clip-path-container:hover {
+  border-radius: 50%;
+  outline: none;
+} 
+.sause {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    transition: all .2s ease-in-out;
+    transform: scale(1.5); 
+    outline: none;
+    overflow: hidden;  
+    clip-path: polygon(0 100%, 0 0, 52% 0, 52% 100%);
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+}
+.clip-path-container:hover .sause {
+    clip-path: polygon(50% 100%, 50% 0, 100% 0, 100% 100%);
+    transform: scale(1.1);
+    
+  }
+  
+  .clip-path-container:hover .description-holder { 
+    left: 20px;
+    opacity: 1;
+  }
+  .description-holder {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    height: 300px;
+    width: 100px;
+    transition: all .4s ease-in-out;
+    transition-delay: .1s;
+    opacity: 0;
+    text-align: right;
+  }
+  
+  /*.guac-holder {
+    top: 45px;
+  }*/
+  
+  .description-holder h4 {
+    font-size: 14px;
+    margin-bottom: -8px;
+  }
+  
+  .description-holder p {
+    max-width: 100px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+    
+  }
+  
+  .curry {
+  background-image: url('https://cosmorecetas.com/images/squared/pollo-curry-leche-coco.png');
+  background-position: 0 0;
+}
+
+.picante {
+background-image: url('https://vegetariangastronomy.com/wp-content/uploads/2018/11/spicy-roasted-red-bell-pepper-sauce-5.jpg')
+  }
+
+.guacamole {
+  background-image: url('https://i.blogs.es/6e45e0/guacamole-listo/840_560.jpg');
+  background-position: 50% 90%;
+}
+
+.tzaziki {
+  background-image: url('https://www.feastingathome.com/wp-content/uploads/2019/08/Tzatziki_-12.jpg');
+  background-position: 50% 90%;
+  }
+
+.soy {
+ background-image: url('https://img.dtcn.com/image/themanual/pouring-soy-sauce-into-a-white-bowl.jpg');
+  background-position: 50% 70%;  }
+
+.mustard {
+  background-image: url('https://theeatdown.com/wp-content/uploads/homemade-dijon-mustard-recipe-1-500x467.jpg');
+  background-position: 50% 30%;
+}
